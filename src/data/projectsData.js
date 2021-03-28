@@ -56,7 +56,7 @@ export const projectsData = [
     projectName: "Hotel Page",
     projectImg: Hotel,
     procjetTitle:
-      "Strona portalu z pokojami do wynajęcia. Projekt korzystajacy z Reacta oparty na klasach, wykorzystujący React-router-dom, context oraz css",
+      "Strona portalu z pokojami do wynajęcia. Projekt korzystajacy z Reacta oparty na klasach, wykorzystujący React-router-dom, context oraz css.",
     gitLink: "https://beachresortpage.netlify.app/",
     typeProject: "React",
     demo: "https://beachresortpage.netlify.app/",
@@ -69,7 +69,7 @@ export const projectsData = [
     projectName: "Boardgame Blog",
     projectImg: Blog,
     procjetTitle:
-      "Forum o tematyce gier planszowych, stworzone przy wykorzystaniu Reacta oraz Reduxa odpowiedzialnego za zarządzanie stanem. Projekt w trakcie powstawania",
+      "Forum o tematyce gier planszowych, stworzone przy wykorzystaniu Reacta oraz Reduxa odpowiedzialnego za zarządzanie stanem. Projekt w trakcie powstawania.",
     gitLink: "https://github.com/AdrianJazowski/boardgameMaker",
     typeProject: "Redux",
 
@@ -82,7 +82,7 @@ export const projectsData = [
     projectName: "LinkedIn clone",
     projectImg: LinkedIn,
     procjetTitle:
-      "Imitacja portalu społecznościowego, która powstała w ramach nauki reduxa oraz firebasea. Projekt zawiera cześciową funkcjonalność taką jak: logowanie, dodwanie postów,",
+      "Imitacja portalu społecznościowego, która powstała w ramach nauki reduxa oraz firebasea. Projekt zawiera cześciową funkcjonalność taką jak: logowanie, dodwanie postów.",
     gitLink: "https://github.com/AdrianJazowski/boardgameMaker",
     typeProject: "Redux",
     demo: "https://clone-linkedind.netlify.app/",

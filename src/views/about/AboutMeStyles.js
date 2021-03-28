@@ -85,6 +85,7 @@ export const ContainerForText = styled.div`
   background-clip: padding-box;
   align-items: center;
   text-align: center;
+  place-content: center;
   box-shadow: 0px 0px 15px 10px rgb(15 193 107 / 50%);
   ${({ one }) =>
     one &&
