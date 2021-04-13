@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
   background-size: cover;
   overflow-x: hidden;
   font-family: emoji;
+  width: 100vw;
 
 } 
 button{

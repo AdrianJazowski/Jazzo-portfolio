@@ -4,46 +4,30 @@ import styled, { css } from "styled-components";
 
 export const AboutMeWrapper = styled.div`
   display: block;
-  height: 120vh;
-  width: 100vw;
-
-  @media screen and (max-width: 1025px) {
-    height: 90vh;
-  }
-  @media screen and (max-width: 420px) {
-    height: 340vh;
-  }
+  height: 100%;
+  width: 100%;
 `;
 export const LeftAbouteMeDiv = styled.div`
   width: 80%;
-  height: 50%;
+  height: 100%;
+  min-height: 50vh;
   display: flex;
   margin: auto;
-  @media screen and (max-width: 1025px) {
-    height: 50vh;
-    margin: auto;
-  }
-  @media screen and (max-width: 420px) {
-    height: 190vh;
-  }
+  justify-content: center;
 `;
 export const RightAbouteMeDiv = styled.div`
   width: 80%;
   height: 50%;
   display: flex;
   margin: 24px auto 36px;
-  @media screen and (max-width: 1025px) {
-    height: 40vh;
-    margin: 24px auto 24px;
-  }
-  @media screen and (max-width: 420px) {
-    height: 150vh;
-  }
 `;
 export const Skills = styled.div`
   margin: auto;
   text-align: center;
   width: 100%;
+  @media screen and (max-width: 540px) {
+    margin: 0 auto;
+  }
   @media screen and (max-width: 420px) {
     margin: 0 auto;
   }
@@ -55,6 +39,9 @@ export const AboutMeH2 = styled.h2`
   text-align: center;
   padding-bottom: 24px;
   margin: 10px;
+  @media screen and (max-width: 540px) {
+    font-size: 2rem;
+  }
 `;
 
 export const SkillsIcons = styled.div`
@@ -68,6 +55,9 @@ export const SkillsIcons = styled.div`
     &:hover {
       color: rgba(15, 193, 107, 0.9);
     }
+  }
+  @media screen and (max-width: 540px) {
+    display: inline-block;
   }
   @media screen and (max-width: 420px) {
     display: inline-block;
@@ -139,6 +129,7 @@ export const IconContainer = styled.div`
   p {
     font-size: 22px;
     color: #fff;
+    min-width: 100px;
   }
   @media screen and (max-width: 420px) {
     display: contents;

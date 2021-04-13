@@ -14,8 +14,11 @@ export const Heading = styled.div`
   @media screen and (max-width: 1025px) {
     margin: 0;
   }
+  @media screen and (max-width: 540px) {
+    font-size: 3rem;
+  }
   @media screen and (max-width: 420px) {
-    margin: 0;
+    font-size: 2rem;
   }
   ${({ projects }) =>
     projects &&

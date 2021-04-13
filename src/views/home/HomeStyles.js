@@ -6,7 +6,7 @@ import { FaArrowCircleUp } from "react-icons/fa";
 
 export const HomeWrapper = styled.div`
   text-align: center;
-  width: 100vw;
+  width: 100%;
   height: 90vh;
   background-image: url(${bgPhoto});
   background-position: center;
@@ -21,7 +21,7 @@ export const HomeWrapper = styled.div`
   }
 `;
 export const LeftHomeDiv = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -5;

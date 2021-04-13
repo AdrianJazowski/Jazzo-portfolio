@@ -8,8 +8,11 @@ export const Wrapper = styled.div`
   justify-content: center;
   margin-top: 36px;
   height: 100%;
+  @media screen and (max-width: 540px) {
+    margin-top: 10px;
+  }
   @media screen and (max-width: 420px) {
-    margin-top: 80px;
+    margin-top: 10px;
     margin-bottom: 15px;
   }
 `;

@@ -4,11 +4,8 @@ import cardReverse from "../../assets/cardReverse.jpg";
 
 export const ProjectPageWrapper = styled.div`
   height: 100%;
-  width: 100vw;
+  width: 100%;
   margin: 0;
-  @media screen and (max-width: 420px) {
-    height: 100%;
-  }
 `;
 
 export const ProjectCardDeck = styled.div`

@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import FiltrByProjectCategory from "../../components/filters/FiltrByProjectCategory";
 import PortfolioContext from "../../context";
 import {
@@ -18,7 +18,6 @@ import {
   DemoLink,
   FlipDiv,
 } from "./ProjectsStyles";
-import { AiFillGithub } from "react-icons/ai";
 import Flip from "react-reveal/Flip";
 
 const Projects = () => {
@@ -43,7 +42,7 @@ const Projects = () => {
             } = project;
             return (
               <Flip left>
-                <Cardwrapper>
+                <Cardwrapper key={id}>
                   <CardInner isFlipped={isFlipped} key={id}>
                     <FrontCard onClick={() => toggleIsFlipped(id)}>
                       <h2>{projectName}</h2>

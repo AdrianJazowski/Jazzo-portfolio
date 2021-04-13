@@ -23,26 +23,6 @@ const contactFormSchema = Yup.object().shape({
 });
 
 const ContactForm = () => {
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_EMAIL_SERVICE,
-        process.env.REACT_APP_EMAIL_TEMPLATE,
-        e.target,
-        process.env.REACT_APP_EMAIL_USER
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
   return (
     <Wrapper>
       <Formik
@@ -50,16 +30,25 @@ const ContactForm = () => {
           userName: "",
           userEmail: "",
           message: "",
-          acceptTerms: false,
         }}
         validationSchema={contactFormSchema}
-        onSubmit={(values) => {
-          emailjs.send(
-            process.env.REACT_APP_EMAIL_SERVICE,
-            process.env.REACT_APP_EMAIL_TEMPLATE,
-            values,
-            process.env.REACT_APP_EMAIL_USER
-          );
+        onSubmit={(values, { resetForm }) => {
+          emailjs
+            .send(
+              process.env.REACT_APP_EMAIL_SERVICE,
+              process.env.REACT_APP_EMAIL_TEMPLATE,
+              values,
+              process.env.REACT_APP_EMAIL_USER
+            )
+            .then(
+              (result) => {
+                console.log(result.text);
+              },
+              (error) => {
+                console.log(error.text);
+              }
+            );
+          resetForm();
         }}
       >
         {({ values }) => (
